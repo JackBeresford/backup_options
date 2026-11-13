@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup File
+
+[Service]
+Type=oneshot
+ExecStart=rsync <path/to/file> /home/<user>/.local/share/
+
+[Install]
+WantedBy=default.target
